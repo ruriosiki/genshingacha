@@ -1,24 +1,24 @@
-¸ù¾Ý×îÐÂBÕ¾ID @Ò»¿ÃÆ½ºâÊ÷ ´óÀÐµÄÀíÂÛ
-²Î¿¼×¨À¸ https://www.bilibili.com/read/cv10468091
+ï»¿æ ¹æ®æœ€æ–°Bç«™ID @ä¸€æ£µå¹³è¡¡æ ‘ å¤§ä½¬çš„ç†è®º
+å‚è€ƒä¸“æ  https://www.bilibili.com/read/cv10468091
 
-ÓéÀÖÏòÔ­Éñ³é¿¨Ä£ÄâÆ÷£¨µÍ·ÂÊµ¼ÊÔ­Éñ¿¨³Ø£©
-£¨ÏÖÖ»¸üÐÂÏÞ¶¨½ÇÉ«µÄUP³ØÄ£Äâ£©
+å¨±ä¹å‘åŽŸç¥žæŠ½å¡æ¨¡æ‹Ÿå™¨ï¼ˆä½Žä»¿å®žé™…åŽŸç¥žå¡æ± ï¼‰
+ï¼ˆçŽ°åªæ›´æ–°é™å®šè§’è‰²çš„UPæ± æ¨¡æ‹Ÿï¼‰
 
-python3.7ºÍpython3.8Ä¬ÈÏÄ£¿é½Ô¿ÉÔËÐÐ
+python3.7å’Œpython3.8é»˜è®¤æ¨¡å—çš†å¯è¿è¡Œ
 
-#µ¼Èë½ÇÉ«up³ØÄ£¿é
+#å¯¼å…¥è§’è‰²upæ± æ¨¡å—
 import genshingacha
 cup = genshingacha.CharacterUP()
 
-#µ¥³éº¯Êý
+#å•æŠ½å‡½æ•°
 cup.danchou()
-#Ê®Á¬º¯Êý
+#åè¿žå‡½æ•°
 cup.shilian()
-#ÖØÖÃ³é¿¨¼ÇÂ¼
+#é‡ç½®æŠ½å¡è®°å½•
 cup.init_info()
 
-#·µ»ØÕûÐÍÁÐ±í countlist = [ËùÓÐÈýÐÇµÄÊýÁ¿,ËùÓÐËÄÐÇµÄÊýÁ¿,ËùÓÐÎåÐÇµÄÊýÁ¿,ËùÓÐËÄÐÇupµÄÊýÁ¿,ËùÓÐÎåÐÇupµÄÊýÁ¿,³é¿¨Êý]
+#è¿”å›žæ•´åž‹åˆ—è¡¨ countlist = [æ‰€æœ‰ä¸‰æ˜Ÿçš„æ•°é‡,æ‰€æœ‰å››æ˜Ÿçš„æ•°é‡,æ‰€æœ‰äº”æ˜Ÿçš„æ•°é‡,æ‰€æœ‰å››æ˜Ÿupçš„æ•°é‡,æ‰€æœ‰äº”æ˜Ÿupçš„æ•°é‡,æŠ½å¡æ•°]
 count_list = cup.count()
 
-¸ü¶àÓÃ·¨²Î¿¼
-ÓÃ·¨.py
+æ›´å¤šç”¨æ³•å‚è€ƒ
+ç”¨æ³•.py

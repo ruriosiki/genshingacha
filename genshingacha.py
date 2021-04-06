@@ -8,22 +8,26 @@ Created on Thu Apr  1 13:25:40 2021
 import random
 import os
 import configparser
- 
+import kachi
+
+
+
 class CharacterUP():
     
-    def __init__(self):
+    def __init__(self,kachiname):
         
-        
-        self.up_five = ["温迪"]
-        self.other_five = ["刻晴","莫娜","七七","迪卢克","琴"]
-        self.up_four = ["砂糖","雷泽","诺艾尔"]
-        self.ren_four = ["砂糖", "诺艾尔", "菲谢尔", "行秋", "香菱",
-                         "雷泽", "芭芭拉", "重云", "班尼特", "凝光",
-                         "辛焱","迪奥娜","北斗"]
-        self.wuqi_four = ["弓藏", "绝弦", "昭心", "流浪乐章", "西风长枪",
-                          "雨裁", "钟剑", "匣里龙吟", "笛剑", "祭礼弓",
-                          "西风猎弓", "祭礼残章", "西风秘典", "匣里灭辰", "祭礼大剑",
-                          "西风大剑", "祭礼剑", "西风剑"]
+        if kachiname == '暂别冬都':
+            kachilist = kachi.暂别冬都()
+        elif kachiname == '杯装之诗': 
+             kachilist = kachi.杯装之诗()
+        else:
+            print('不存在此卡池')
+            
+        self.up_five = kachilist[0]
+        self.other_five = kachilist[1]
+        self.up_four = kachilist[2]
+        self.ren_four = kachilist[3]
+        self.wuqi_four = kachilist[4]
         
         self.other_four = self.ren_four.copy()
         
@@ -161,7 +165,10 @@ class CharacterUP():
     
         conf.write(open(conf_path, 'w'))
         
+        gachanum = int(conf.get("CharacterUP_statistics" ,"gachanum"))
+        print(gachanum)
         self.read_info()
+        print(gachanum)
         #txt_path = base_dir + '\\result.txt'
         
     def save_info(self):

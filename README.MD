@@ -5,12 +5,13 @@
 （现只更新限定角色的UP池模拟）
 
 python3.7和python3.8默认模块皆可运行
+卡池已更新'杯装之诗'和'暂别冬都'
 
-#导入角色up池模块
+#导入角色up池模块和卡池名
 
 ``` stylus
 import genshingacha
-cup = genshingacha.CharacterUP()
+cup = genshingacha.CharacterUP('暂别冬都')
 ``` 
 
 
@@ -29,7 +30,7 @@ cup.shilian()
 #重置抽卡记录
 
 ``` stylus
-cup.init_info
+cup.init_info()
 
 ``` 
 

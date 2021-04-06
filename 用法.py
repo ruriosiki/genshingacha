@@ -4,21 +4,22 @@ Created on Sun Apr  4 11:55:28 2021
 
 @author: ruriosiki
 """
-import genshingacha
 
-cup = genshingacha.CharacterUP()
+#导入模块和卡池名
+import genshingacha
+cup = genshingacha.CharacterUP('暂别冬都')
 
 #单抽函数，返回字符
 #cup.danchou()
 
 
 #十连函数,返回列表
-#a = cup.shilian()
-#print(a)
+a = cup.shilian()
+print(a)
 
 
 #重置抽卡记录
-cup.init_info()
+#cup.init_info()
 
 
 '''-----------------------------------------'''
